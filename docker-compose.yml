@@ -32,3 +32,5 @@ logstash:
 
   links:
     - elasticsearch
+  volumes:
+    - ./mydata:/usr/share/logstash/mydata
