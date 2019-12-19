@@ -34,3 +34,6 @@ logstash:
     - elasticsearch
   volumes:
     - ./mydata:/usr/share/logstash/mydata
+    - "$PWD/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml"
+    - "$PWD/logstash/pipeline/logstash.conf:/usr/share/logstash/pipeline/logstash.conf"
+
